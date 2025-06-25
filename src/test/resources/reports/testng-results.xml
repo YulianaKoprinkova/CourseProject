@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-25T18:15:03 EEST" name="Default Suite" finished-at="2025-06-25T18:15:13 EEST" duration-ms="10278">
+  <suite started-at="2025-06-25T18:34:27 EEST" name="Default Suite" finished-at="2025-06-25T18:34:37 EEST" duration-ms="9527">
     <groups>
     </groups>
-    <test started-at="2025-06-25T18:15:03 EEST" name="LoginHappyPathTests.java" finished-at="2025-06-25T18:15:13 EEST" duration-ms="10278">
+    <test started-at="2025-06-25T18:34:27 EEST" name="LoginHappyPathTests.java" finished-at="2025-06-25T18:34:37 EEST" duration-ms="9527">
       <class name="org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests">
-        <test-method is-config="true" signature="setupTestSuite()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@5656be13]" started-at="2025-06-25T18:15:03 EEST" name="setupTestSuite" finished-at="2025-06-25T18:15:03 EEST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="setupTestSuite()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3590fc5b]" started-at="2025-06-25T18:34:27 EEST" name="setupTestSuite" finished-at="2025-06-25T18:34:27 EEST" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTestSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@5656be13]" started-at="2025-06-25T18:15:03 EEST" name="setUp" finished-at="2025-06-25T18:15:07 EEST" duration-ms="4317" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3590fc5b]" started-at="2025-06-25T18:34:27 EEST" name="setUp" finished-at="2025-06-25T18:34:31 EEST" duration-ms="4090" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,22 +27,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@5656be13]" started-at="2025-06-25T18:15:07 EEST" name="verifyTheUserCanRegisterWithValidCredentials" finished-at="2025-06-25T18:15:13 EEST" duration-ms="5653" status="PASS">
+        <test-method signature="verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3590fc5b]" started-at="2025-06-25T18:34:31 EEST" name="verifyTheUserCanRegisterWithValidCredentials" finished-at="2025-06-25T18:34:37 EEST" duration-ms="5114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserCanRegisterWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@5656be13]" started-at="2025-06-25T18:15:13 EEST" name="tearDown" finished-at="2025-06-25T18:15:13 EEST" duration-ms="265" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3590fc5b]" started-at="2025-06-25T18:34:37 EEST" name="tearDown" finished-at="2025-06-25T18:34:37 EEST" duration-ms="282" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserCanRegisterWithValidCredentials status=SUCCESS method=RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@5656be13] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserCanRegisterWithValidCredentials status=SUCCESS method=RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3590fc5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="cleanFiles()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@5656be13]" started-at="2025-06-25T18:15:13 EEST" name="cleanFiles" finished-at="2025-06-25T18:15:13 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="cleanFiles()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3590fc5b]" started-at="2025-06-25T18:34:37 EEST" name="cleanFiles" finished-at="2025-06-25T18:34:37 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanFiles -->

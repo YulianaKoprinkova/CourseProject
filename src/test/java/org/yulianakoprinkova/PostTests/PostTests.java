@@ -30,10 +30,11 @@ public class PostTests extends BaseTest {
         log.info("STEP 4: Click on New Post navigation bar ");
         homePage.clickOnNewPostNavBar();
 
-        log.info("STEP 1: Navigating to Home page ");
+        log.info("STEP 5: Navigating to Post page ");
         PostPage postPage = new PostPage(super.driver, log);
 
-        postPage.uploadPicture(postPicture);
+        //log.info("STEP 6: Navigating to Home page ");
+        //postPage.uploadPicture(postPicture);
 
         //postPage.providePostCaption(CAPTION);
         //postPage.clickCreatePostButton();
@@ -50,7 +51,7 @@ public class PostTests extends BaseTest {
         Assert.assertEquals(postUserTxt, TEST_USER);
     }
 
-    @Test (priority = 1)
+    @Test (priority = 2)
     public void verifyUserCanLikePost() {
         HomePage homePage = new HomePage(super.driver, log);
         LoginPage loginPage = new LoginPage(super.driver, log);

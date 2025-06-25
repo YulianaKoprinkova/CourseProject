@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Default Suite</span>
+              <span class="suite-name border-passed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
-                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_Suite">
+                    <div class="method-list-content passed suite-Default_Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="org.yulianakoprinkova.LoginTests.LoginHappyPathTests" class="method navigator-link" hash-for-method="verifyTheUserCanLogin">verifyTheUserCanLogin</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests" class="method navigator-link" hash-for-method="verifyTheUserCanRegisterWithValidCredentials">verifyTheUserCanRegisterWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="org.yulianakoprinkova.LoginTests.LoginHappyPathTests" class="method navigator-link" hash-for-method="verifyUserCanLogout">verifyUserCanLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_Suite -->
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,76 +118,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
-          <div class="suite-Default_Suite-class-failed">
+          <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.yulianakoprinkova.LoginTests.LoginHappyPathTests</span>
+              <img src="passed.png"/>
+              <span class="class-name">org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTheUserCanLogin">
-                  </a> <!-- verifyTheUserCanLogin -->
-                  <span class="method-name">verifyTheUserCanLogin</span>
-                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at org.yulianakoprinkova.POM.BasePage.locatorInfo(BasePage.java:112)
-	at org.yulianakoprinkova.POM.BasePage.isElementPresent(BasePage.java:81)
-	at org.yulianakoprinkova.POM.HomePage.isLoginLinkShown(HomePage.java:177)
-	at org.yulianakoprinkova.LoginTests.LoginHappyPathTests.verifyTheUserCanLogin(LoginHappyPathTests.java:31)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserCanLogout">
-                  </a> <!-- verifyUserCanLogout -->
-                  <span class="method-name">verifyUserCanLogout</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: nav-link-LoginTests&apos; (tried for 7 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at org.yulianakoprinkova.POM.HomePage.clickOnLoginNavBar(HomePage.java:84)
-	at org.yulianakoprinkova.LoginTests.LoginHappyPathTests.verifyUserCanLogout(LoginHappyPathTests.java:91)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#nav\-link\-LoginTests&quot;}
-  (Session info: chrome=137.0.7151.104)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06ab2bcb79f8e94c5a556a7bca31236b, findElement {using=id, value=nav-link-LoginTests}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: C:\Users\35988\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55309}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55309/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 06ab2bcb79f8e94c5a556a7bca31236b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 27 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifyTheUserCanRegisterWithValidCredentials">
+                  </a> <!-- verifyTheUserCanRegisterWithValidCredentials -->
+                  <span class="method-name">verifyTheUserCanRegisterWithValidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_Suite-class-failed -->
+          </div> <!-- suite-Default_Suite-class-passed -->
         </div> <!-- panel Default_Suite -->
         <div panel-name="test-xml-Default_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -205,7 +145,7 @@ Session ID: 06ab2bcb79f8e94c5a556a7bca31236b
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;LoginHappyPathTests.java&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.yulianakoprinkova.LoginTests.LoginHappyPathTests&quot;/&gt;
+      &lt;class name=&quot;org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginHappyPathTests.java --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -245,20 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCanLogout')
-data.setCell(0, 2, 'org.yulianakoprinkova.LoginTests.LoginHappyPathTests')
-data.setCell(0, 3, 50726);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyTheUserCanLogin')
-data.setCell(1, 2, 'org.yulianakoprinkova.LoginTests.LoginHappyPathTests')
-data.setCell(1, 3, 25733);
+data.setCell(0, 1, 'verifyTheUserCanRegisterWithValidCredentials')
+data.setCell(0, 2, 'org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests')
+data.setCell(0, 3, 5114);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -284,42 +220,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.yulianakoprinkova.LoginTests.LoginHappyPathTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupTestSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void org.yulianakoprinkova.LoginTests.LoginHappyPathTests.verifyTheUserCanLogin())</span>
-                <span class="method-start">99 ms</span>
+                <span class="method-name">setUp(chrome, public void org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests.verifyTheUserCanRegis...)</span>
+                <span class="method-start">92 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyTheUserCanLogin</span>
-                <span class="method-start">2717 ms</span>
+                <span class="method-name">verifyTheUserCanRegisterWithValidCredentials</span>
+                <span class="method-start">4185 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyTheUserCanLogin status=FAILURE method=LoginHappyPathTests.verifyTheUserCanLog...)</span>
-                <span class="method-start">28464 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, public void org.yulianakoprinkova.LoginTests.LoginHappyPathTests.verifyUserCanLogout() throw...)</span>
-                <span class="method-start">29266 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyUserCanLogout</span>
-                <span class="method-start">30711 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyUserCanLogout status=FAILURE method=LoginHappyPathTests.verifyUserCanLogout()...)</span>
-                <span class="method-start">81437 ms</span>
+                <span class="method-name">tearDown([TestResult name=verifyTheUserCanRegisterWithValidCredentials status=SUCCESS method=RegisterHappyPat...)</span>
+                <span class="method-start">9302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">cleanFiles</span>
-                <span class="method-start">82215 ms</span>
+                <span class="method-start">9619 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
