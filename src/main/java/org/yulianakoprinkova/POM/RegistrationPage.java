@@ -11,14 +11,14 @@ import java.time.format.DateTimeFormatter;
 
 public class RegistrationPage extends BasePage {
 
-    public static final String REG_PAGE_SUFIX = "/users/RegisterTests";
+    public static final String REG_PAGE_SUFIX = "/users/register";
 
     //2.LOCATORS
     //Registration form
     @FindBy(css = "h4")
     private WebElement regFormTitle;
 
-    @FindBy(xpath = "//input[contains(@name, \"username\")]") // = driver.findElement(By.xpath(USERNAME_REG_INPUT_FIELD_XPATH));
+    @FindBy(xpath = "//input[contains(@name, \"username\")]")
     private WebElement regUsernameInputField;
 
     @FindBy (xpath = "//input[contains(@type, \"email\")]")
@@ -51,23 +51,26 @@ public class RegistrationPage extends BasePage {
         navigateTo(REG_PAGE_SUFIX);
     }
 
-    //USER ACTIONS ON WEB ELEMENTS
-
-    //REGISTRATION FORM TITLE
-
-    public String getRegFormHeaderText(){
-        return getElementText(regFormTitle);
+    // methods to fill out Registration page form
+    public String newUsername() {
+        int randomNumberForUsername = (int)(Math.random() * 101);
+        String username = ("User" + randomNumberForUsername);
+        return username;
     }
 
-    //FILL OUT REGISTRATION FIELDS
-
     public void provideUserName(){
-        String providedDemoUser = demoUsername();
-        typeText(regUsernameInputField,providedDemoUser);
-    };
+        String provideUsername = newUsername();
+        typeText(regUsernameInputField,provideUsername);
+    }
+
+    public String newValidEmail() {
+        int randomNumberForEmail = (int)(Math.random() * 101);
+        String email = "user" + randomNumberForEmail + "@gmail.com";
+        return email;
+    }
 
     public void provideEmail(){
-        typeText(regEmailInputField,randomValidEmail());
+        typeText(regEmailInputField, newValidEmail());
     };
 
     public void provideBDayInfo(){
@@ -90,41 +93,25 @@ public class RegistrationPage extends BasePage {
         clickOn(registrationFormSubmitButton);
     }
 
-
-    //Support methods for reg page
-    public String getCurrentTime() {
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HHmmss");
-        String formattedDateTime = now.format(formatter);
-        return formattedDateTime;
-    }
-
-
-    //Support utils for test data gen
-    public String demoUsername() {
-        String username = "Demo" + getCurrentTime();
-        return username;
-    }
-
-    public String randomValidEmail() {
-        String email = "demo" + getCurrentTime() + "@gmail.com";
-        return email;
+    //Getters for Registration page
+    public String getRegFormHeaderText(){
+        return getElementText(regFormTitle);
     }
 
     public String getRegPageTitle () {
         return driver.getTitle();
     }
 
+    public String getToastContainerText() {
+        return getElementText(toastContainerSuccessRegMessage);
+    }
 
-
-    // VERIFICATION METHODS FOR REGISTRATION PAGE
+    // Verification methods for Registration page
     public boolean isRegFormSuccessMessageShown(){
         return isElementPresent(toastContainerSuccessRegMessage);
     }
 
-    public String getToastContainerText() {
-        return getElementText(toastContainerSuccessRegMessage);
-    }
+
 
 
 

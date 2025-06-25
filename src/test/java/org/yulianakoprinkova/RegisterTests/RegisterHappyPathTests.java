@@ -11,31 +11,31 @@ public class RegisterHappyPathTests extends BaseTest{
 
     private static final String REGISTER_PAGE_TITLE = "ISkillo";
     private static final String REGISTER_FORM_TITLE = "Sign up";
-    private static final String REGISTER_SUCCESSFUL_MSG = "Successful RegisterTests!";
+    private static final String REGISTER_SUCCESSFUL_MSG = "Successful register!";
     private static final String HOMEPAGE_TITLE = "ISkillo";
 
     @Test
     public void verifyTheUserCanRegisterWithValidCredentials()  {
 
-        log.info("STEP 1: Unregistered user opens the Skillo Register Page ");
+        log.info("STEP 1: Navigating to Registration Page ");
         RegistrationPage regPage = new RegistrationPage(super.driver, log);
         regPage.navigateToRegistrationPageByURL();
 
-        log.info("STEP 2. Verify the user is on the registration page ");
+        log.info("STEP 2. Verify the user is on the Registration page ");
         String actualRegPageTitle = regPage.getRegPageTitle();
-        Assert.assertEquals(actualRegPageTitle,REGISTER_PAGE_TITLE);
+        Assert.assertEquals(actualRegPageTitle, REGISTER_PAGE_TITLE);
 
         log.info("STEP 3. Verify the registration form title ");
         String actualRegFormHeaderText = regPage.getRegFormHeaderText();
-        Assert.assertEquals(actualRegFormHeaderText,REGISTER_FORM_TITLE);
+        Assert.assertEquals(actualRegFormHeaderText, REGISTER_FORM_TITLE);
 
-        log.info("STEP 4. Provide new username");
+        log.info("STEP 4. Provide registration username");
         regPage.provideUserName();
 
-        log.info("STEP 5. Provide new email");
+        log.info("STEP 5. Provide registration email");
         regPage.provideEmail();
 
-        log.info("STEP 6. Provide birthdate");
+        log.info("STEP 6. Provide registration birthdate");
         regPage.provideBDayInfo();
 
         log.info("STEP 7. Provide new password");
@@ -47,14 +47,14 @@ public class RegisterHappyPathTests extends BaseTest{
         log.info("STEP 9. Provide public info");
         regPage.providePublicInfo();
 
-        log.info("STEP 10. Click on loginButton");
+        log.info("STEP 10. Click on Sign In button");
         regPage.clickOnSubmitBtn();
 
-        log.info("STEP 11. Assert if RegisterTests popup message is shown");
+        log.info("STEP 11. Assert if successful registration popup message is shown");
         Boolean regPopupMessage = regPage.isRegFormSuccessMessageShown();
-        Assert.assertEquals(true, regPopupMessage);
+        Assert.assertTrue(true, REGISTER_SUCCESSFUL_MSG);
 
-        log.info("STEP 12. Assert text of successful RegisterTests message shown");
+        log.info("STEP 12. Assert correct text of successful register message is shown");
         String registPopupMessage = regPage.getToastContainerText();
         Assert.assertEquals(registPopupMessage, REGISTER_SUCCESSFUL_MSG);
 

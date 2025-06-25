@@ -8,27 +8,34 @@ import java.io.File;
 
 public class PostTests extends BaseTest {
 
-    public static final String testUser = "testingDemos";
-    public static final String testPassword = "testing";
-    public static final String caption = "Testing the create post caption";
-    File postPicture = new File("src/test/resources/upload/testUpload.jpg");
+    public static final String TEST_USER = "testingDemos";
+    public static final String TEST_PASSWORD = "testing";
+    public static final String CAPTION = "Testing the create post CAPTION";
+    File postPicture = new File("src/test/resources/upload/testPic.png");
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void verifyUserCanCreatePost() {
+
+        log.info("STEP 1: Navigating to Home page ");
         HomePage homePage = new HomePage(super.driver, log);
         homePage.openHomePage();
+
+        log.info("STEP 2: Navigating to Login page ");
         homePage.clickOnLoginNavBar();
 
+        log.info("STEP 3: Logging with registered user credentials ");
         LoginPage loginPage = new LoginPage(super.driver, log);
         loginPage.loginWithTestUserCredentials();
 
+        log.info("STEP 4: Click on New Post navigation bar ");
         homePage.clickOnNewPostNavBar();
 
+        log.info("STEP 1: Navigating to Home page ");
         PostPage postPage = new PostPage(super.driver, log);
 
         postPage.uploadPicture(postPicture);
 
-        //postPage.providePostCaption(caption);
+        //postPage.providePostCaption(CAPTION);
         //postPage.clickCreatePostButton();
 
         ProfilePage profilePage = new ProfilePage(super.driver, log);
@@ -40,7 +47,7 @@ public class PostTests extends BaseTest {
         Assert.assertTrue(postModal.isImageVisible(), "The image is not visible!");
 
         String postUserTxt = postModal.getPostUser();
-        Assert.assertEquals(postUserTxt, testUser);
+        Assert.assertEquals(postUserTxt, TEST_USER);
     }
 
     @Test (priority = 1)
