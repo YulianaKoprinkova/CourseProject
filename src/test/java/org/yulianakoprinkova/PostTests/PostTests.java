@@ -76,7 +76,6 @@ public class PostTests extends BaseTest {
         profilePage.clickPost(0);
 
         log.info("STEP 6: Click on Lock Button");
-        profilePage.clickPost();
         profilePage.clickOnLockButton();
 
         log.info("STEP 7: Is 'Post is now private' message visible after liking a post");
