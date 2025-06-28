@@ -1,5 +1,6 @@
 package org.yulianakoprinkova.POM;
 
+import net.bytebuddy.asm.Advice;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -29,6 +30,8 @@ public class ProfilePage  extends BasePage {
     private WebElement postLikeMessage;
     @FindBy (xpath = "//div[contains(@aria-label,'Post disliked')]")
     private WebElement postDislikeMessage;
+    @FindBy(xpath = "//input[contains(@formcontrolname,'content')]")
+    private WebElement postCommentField;
 
     public ProfilePage (WebDriver driver, Logger log) {
         super(driver,log);
@@ -43,19 +46,16 @@ public class ProfilePage  extends BasePage {
         clickOn(deletePostButton);
     }
 
-    public void ClickOnLikeButton() {
-        clickOn(likeButton);
-    }
-
-    public void ClickOnDislikeButton() {
-        clickOn(dislikeButton);
+    public void providePostComment() {
+        wait.until(ExpectedConditions.visibilityOf(postCommentField));
+        postCommentField.sendKeys("test comment"+ "\n");
+        log.info("CONFIRMATION # The user has provided a comment on their post");
     }
 
     Actions action = new Actions(driver);
     public void HoverOverProfilePicture () {
         action.moveToElement(uploadImage).perform();
     }
-
 
     public String getUsername() {
         WebElement username = driver.findElement(By.tagName("h2"));
@@ -70,7 +70,6 @@ public class ProfilePage  extends BasePage {
     public void clickPost(int postIndex) {
         List<WebElement> posts = driver.findElements(By.tagName("app-post"));
         posts.get(postIndex).click();
-
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("return document.readyState").equals("complete");
     }
@@ -112,11 +111,5 @@ public class ProfilePage  extends BasePage {
             isDislikeMessageVisible = false;
         }
         return isDislikeMessageVisible;
-    }
-
-
-    public void closePostModal() {
-
-
     }
 }

@@ -5,10 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PostModal extends BasePage {
+
     private final WebElement modalElement;
+
     public PostModal (WebDriver driver, Logger log) {
         super(driver,log);
         this.modalElement = driver.findElement(By.className("post-modal"));
@@ -27,5 +30,7 @@ public class PostModal extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(postUser));
         return postUser.getText();
     }
+
+
 
 }

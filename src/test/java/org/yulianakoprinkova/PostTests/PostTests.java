@@ -55,7 +55,7 @@ public class PostTests extends BaseTest {
     }
 
     @Test (priority = 2)
-    public void verifyUserCanLikePost() {
+    public void verifyUserCanCommentOnOwnPost() {
 
         log.info("STEP 1: Navigating to Home page ");
         HomePage homePage = new HomePage(super.driver, log);
@@ -75,40 +75,8 @@ public class PostTests extends BaseTest {
         ProfilePage profilePage = new ProfilePage(super.driver, log);
         profilePage.clickPost(0);
 
-        log.info("STEP 6: Click on Lock Button");
-        profilePage.clickPost();
-        profilePage.clickOnLockButton();
-
-        log.info("STEP 7: Is 'Post is now private' message visible after liking a post");
-        profilePage.isLockedMessageVisible();
-    }
-
-    @Test (priority = 3)
-    public void verifyUserCanDislikePost() {
-
-        log.info("STEP 1: Navigating to Home page ");
-        HomePage homePage = new HomePage(super.driver, log);
-        homePage.openHomePage();
-
-        log.info("STEP 2: Navigating to Login page ");
-        homePage.clickOnLoginNavBar();
-
-        log.info("STEP 3: Logging with registered user credentials ");
-        LoginPage loginPage = new LoginPage(super.driver, log);
-        loginPage.loginWithTestUserCredentials();
-
-        log.info("STEP 4. Navigating to Profile page.");
-        homePage.clickOnProfileLink();
-
-        log.info("STEP 5: Click on post on Profile page.");
-        ProfilePage profilePage = new ProfilePage(super.driver, log);
-        profilePage.clickPost(0);
-
-        log.info("STEP 5: Click to dislike");
-        profilePage.ClickOnLikeButton();
-
-        //log.info("STEP 6: Is 'Liked' message visible after liking a post");
-        //profilePage.isDislikeMessageVisible();
+        log.info("STEP 6: Enter a comment on user's post");
+        profilePage.providePostComment();
     }
 
     @Test(priority = 4)

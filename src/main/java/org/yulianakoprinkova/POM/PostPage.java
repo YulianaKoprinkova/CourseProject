@@ -13,8 +13,7 @@ public class PostPage extends BasePage {
     final String POST_PAGE_URL = "http://training.skillo-bg.com:4200/posts/create";
     @FindBy(css = "img.image-preview")
     private WebElement image;
-    @FindBy(css = "input.input-lg")
-    private WebElement imageTextElement;
+
     @FindBy(css = ".file[type='file']")
     private WebElement uploadField;
     @FindBy(name = "caption")
@@ -29,11 +28,7 @@ public class PostPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public String getImageName() {
-        String imageName = imageTextElement.getAttribute("placeholder");
-        log.info("CONFIRMATION # The image name is: " + imageName);
-        return imageName;
-    }
+
 
     public void uploadPicture(File file) {
         isElementPresent(uploadField);
@@ -46,6 +41,8 @@ public class PostPage extends BasePage {
         captionElement.sendKeys(caption);
         log.info("CONFIRMATION # The user has provided caption text: " + caption);
     }
+
+
 
     public void clickCreatePostButton() {
         wait.until(ExpectedConditions.visibilityOf(createPostButton));
