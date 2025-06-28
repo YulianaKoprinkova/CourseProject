@@ -60,21 +60,15 @@ public class HomePage extends BasePage {
     @FindBy(xpath="//div/div/i")
     private WebElement heartButton;
 
-
-
     public HomePage(WebDriver driver, Logger log) {
         super(driver, log);
         PageFactory.initElements(driver,this);
     }
 
-    //NAVIGATE TO HOMEPAGE
-
     public void openHomePage(){
 
         navigateTo(HOME_PAGE_SUFIX);
     }
-
-    //USER ACTIONS ON WEB ELEMENTS IN HOME PAGE
 
     public void clickOnHomeNavBar(){
         wait.until(ExpectedConditions.visibilityOf(navBarHomeLink));
@@ -96,11 +90,6 @@ public class HomePage extends BasePage {
         clickOn(navBarProfileLink);
     }
 
-    public void clickOnNewPostLink (){
-        wait.until(ExpectedConditions.visibilityOf(navBarNewPostLink));
-        clickOn(navBarNewPostLink);
-    }
-
     public String buttonTextCheck() {
         wait.until(ExpectedConditions.visibilityOf(followUnfollowButton));
         return getElementText(followUnfollowButton);
@@ -120,8 +109,6 @@ public class HomePage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(heartButton));
         heartButton.click();
     }
-
-    //Getters
 
     public String getTitle(){
         String title = driver.getTitle();
@@ -157,10 +144,8 @@ public class HomePage extends BasePage {
         return getElementText(toastContainer);
     }
 
-
-    //verification methods
-
     public boolean isHomeIconShown () {
+
         return isElementPresent(homeIcon);
     }
 
@@ -190,9 +175,9 @@ public class HomePage extends BasePage {
     }
 
     public boolean isNewPostLinkClickable(){
+
         return isElementClickable(navBarNewPostLink);
     }
-
 
     public boolean isProfileShown(){
 
@@ -225,6 +210,7 @@ public class HomePage extends BasePage {
     }
 
     public boolean isPostUserShown () {
+
         return isElementPresent(postUser);
     }
 

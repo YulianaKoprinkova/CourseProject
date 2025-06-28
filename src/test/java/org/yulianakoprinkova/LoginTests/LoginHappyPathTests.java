@@ -6,8 +6,6 @@ import org.yulianakoprinkova.BaseTests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.yulianakoprinkova.POM.HomePage.SUCCESSFUL_LOGIN_MSG;
-
 public class LoginHappyPathTests extends BaseTest {
 
     private static final String LOGIN_FORM_TITLE = "Sign in";
@@ -17,7 +15,6 @@ public class LoginHappyPathTests extends BaseTest {
     private static final String LOGIN_FORM_PASSWORD_PLACEHOLDER_TEXT = "Password";
     private static final String LOGIN_FORM_NOT_A_MEMBER = "Not a member?";
     public static final String LOGIN_SUCCESSFUL_MSG = "Successful login!";
-    public static final String LOGIN_NOT_SUCCESSFUL_MSG = "Wrong username or password!";
     public static final String LOGOUT_SUCCESSFUL_MSG = "Successful logout!";
     public static final String USER = "demoUser111";
     public static final String PASS = "demoUser111";

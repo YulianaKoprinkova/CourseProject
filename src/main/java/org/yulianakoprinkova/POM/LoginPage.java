@@ -49,17 +49,12 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(driver,this);
     }
 
-    public void navigateToLoginPage(){
-        navigateTo(LOGIN_PAGE_SUFIX);
-    }
-
     public void loginWithTestUserCredentials(){
         provideUser(USER);
         providePass(PASS);
         clickOnLoginFormSubmitButton();
     }
 
-    // USER ACTIONS ON WEB ELEMENTS IN LOGIN PAGE
     public void provideUser(String userNameText){
         wait.until(ExpectedConditions.visibilityOf(usernameInputField));
         usernameInputField.clear();
@@ -86,9 +81,6 @@ public class LoginPage extends BasePage {
         logoutLink.click();
     }
 
-
-
-    //GETTERS
     public String getUserNamePlaceholderText(){
         return getElementPlaceholderValue(usernameInputField);
     }
@@ -121,11 +113,6 @@ public class LoginPage extends BasePage {
 
     public boolean isLoginFormHeaderTextShown(){
         return isElementPresent(loginFormTitle);
-    }
-
-    public boolean isLogoutSuccessMessageShown(){
-
-        return isElementPresent(ToastContainerMessage);
     }
 
 }

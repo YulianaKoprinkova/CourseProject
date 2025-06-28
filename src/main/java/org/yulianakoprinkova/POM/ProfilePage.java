@@ -88,17 +88,17 @@ public class ProfilePage  extends BasePage {
         return isDeletedMessageVisible;
     }
 
-    public boolean isLikeMessageVisible() {
-        boolean isLikeMessageVisible = false;
+    public boolean isLockedMessageVisible() {
+        boolean isLockedMessageVisible = false;
         try {
-            isLikeMessageVisible = wait.until(ExpectedConditions.visibilityOf(postLikeMessage)).isDisplayed();
+            isLockedMessageVisible = wait.until(ExpectedConditions.visibilityOf(postLikeMessage)).isDisplayed();
             log.info("CONFIRMATION # The Post liked message is displayed.");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
             log.error("ERROR : The Post liked message is not displayed!");
-            isLikeMessageVisible = false;
+            isLockedMessageVisible = false;
         }
-        return isLikeMessageVisible;
+        return isLockedMessageVisible;
     }
 
     public boolean isDislikeMessageVisible() {

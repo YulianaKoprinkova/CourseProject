@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.io.File;
 
+
 public class PostPage extends BasePage {
     final String POST_PAGE_URL = "http://training.skillo-bg.com:4200/posts/create";
     @FindBy(css = "img.image-preview")
@@ -20,6 +21,8 @@ public class PostPage extends BasePage {
     private WebElement captionElement;
     @FindBy(id = "create-post")
     private WebElement createPostButton;
+    @FindBy(xpath="//i[contains(@class,'fas fa-lock ng-star-inserted')]")
+    private WebElement lockButton;
 
     public PostPage(WebDriver driver, Logger log) {
         super(driver, log);
@@ -49,4 +52,13 @@ public class PostPage extends BasePage {
         createPostButton.click();
         log.info("CONFIRMATION # The user has clicked on the submit post button.");
     }
+
+    public void clickOnLockButton() {
+        wait.until(ExpectedConditions.visibilityOf(lockButton));
+        lockButton.click();
+        log.info("CONFIRMATION # The user has clicked on the lock post button.");
+    }
+
+
+
 }
