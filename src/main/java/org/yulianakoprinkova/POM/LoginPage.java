@@ -8,11 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
-    public static final String LOGIN_PAGE_SUFIX = "/users/LoginTests";
+    public static final String LOGIN_PAGE_SUFIX = "/users/login";
     private static final String USER = "demoUser111";
     private static final String PASS = "demoUser111";
-    public static final String SUCCESSFUL_LOGOUT_MSG = "Successful logout!";
-
 
     //WEBELEMENTS
 
@@ -43,7 +41,6 @@ public class LoginPage extends BasePage {
     //(xpath="//div[contains(@aria-label,\"Successful LoginTests!\")]")
     @FindBy (id = "toast-container")
     private WebElement ToastContainerMessage;
-
 
 
     //LOGIN

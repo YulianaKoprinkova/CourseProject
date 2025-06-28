@@ -20,7 +20,8 @@ public class HomePage extends BasePage {
     public static final String POST_LIKED_MSG = "Post liked";
     public static final String POST_DISLIKED_MSG = "Post disliked";
     public static final String SEARCH_BAR_PLACEHOLDER_TEXT = "Search";
-    public static final String SUCCESSFUL_LOGIN_MSG = "Successful LoginTests!";
+    public static final String SUCCESSFUL_LOGIN_MSG = "Successful login!";
+    public static final String SUCCESSFUL_LOGOUT_MSG = "Successful logout!";
 
 
     @FindBy (id = "homeIcon")
@@ -32,7 +33,7 @@ public class HomePage extends BasePage {
     @FindBy(css = "p.h4")
     private WebElement loginFormTitle;
 
-    @FindBy(id = "nav-link-LoginTests")
+    @FindBy(id = "nav-link-login")
     private WebElement navBarLoginLink;
 
     @FindBy(id = "nav-link-new-post")
@@ -155,6 +156,7 @@ public class HomePage extends BasePage {
 
         return getElementText(toastContainer);
     }
+
 
     //verification methods
 

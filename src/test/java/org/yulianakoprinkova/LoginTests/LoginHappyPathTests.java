@@ -6,6 +6,8 @@ import org.yulianakoprinkova.BaseTests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static org.yulianakoprinkova.POM.HomePage.SUCCESSFUL_LOGIN_MSG;
+
 public class LoginHappyPathTests extends BaseTest {
 
     private static final String LOGIN_FORM_TITLE = "Sign in";
@@ -14,7 +16,7 @@ public class LoginHappyPathTests extends BaseTest {
     private static final String LOGIN_FORM_USERNAME_PLACEHOLDER_TEXT = "Username or email";
     private static final String LOGIN_FORM_PASSWORD_PLACEHOLDER_TEXT = "Password";
     private static final String LOGIN_FORM_NOT_A_MEMBER = "Not a member?";
-    public static final String LOGIN_SUCCESSFUL_MSG = "Successful LoginTests!";
+    public static final String LOGIN_SUCCESSFUL_MSG = "Successful login!";
     public static final String LOGIN_NOT_SUCCESSFUL_MSG = "Wrong username or password!";
     public static final String LOGOUT_SUCCESSFUL_MSG = "Successful logout!";
     public static final String USER = "demoUser111";
@@ -31,13 +33,13 @@ public class LoginHappyPathTests extends BaseTest {
         boolean isShownNavBarLoginLink = homePage.isLoginLinkShown();
         Assert.assertTrue(isShownNavBarLoginLink);
 
-        log.info("STEP 3: The user is navigating to the Login page by clicking on the navigation bar LoginTests link");
+        log.info("STEP 3: The user is navigating to the Login page by clicking on the navigation bar Login link");
         homePage.clickOnLoginNavBar();
 
         log.info("STEP 4.: The user gets successfully to the LoginTests page");
         LoginPage loginPage = new LoginPage(super.driver,log);
 
-        log.info("STEP 5. Assert if the LoginTests form title is shown");
+        log.info("STEP 5. Assert if the Login form title is shown");
         Assert.assertTrue(loginPage.isLoginFormHeaderTextShown());
 
         log.info("STEP 6.: The LoginTests form has the correct title");
@@ -76,18 +78,19 @@ public class LoginHappyPathTests extends BaseTest {
         log.info("STEP 15. The user clicks on the Sign In Button");
         loginPage.clickOnLoginFormSubmitButton();
 
-        log.info("STEP 16. Assert if there is successful LoginTests message shown");
+        log.info("STEP 16. Assert if there is successful Login message shown");
         String popupMessage = loginPage.getLoginPopupSuccessMessageText();
         Assert.assertEquals(popupMessage, LOGIN_SUCCESSFUL_MSG);
     }
 
     @Test (priority=2)
-    public void verifyUserCanLogout() throws InterruptedException {
+    public void verifyUserCanLogout() {
+
         log.info("STEP 1: The Skillo Home page is opened ");
         HomePage homePage = new HomePage(super.driver, log);
         homePage.openHomePage();
 
-        log.info("STEP 2: The user is navigating to the Login page by clicking on the navigation bar LoginTests link");
+        log.info("STEP 2: The user is navigating to the Login page by clicking on the navigation bar Login link");
         homePage.clickOnLoginNavBar();
 
         log.info("STEP 3: The registered user opens the Login page and logs in ");
@@ -100,7 +103,5 @@ public class LoginHappyPathTests extends BaseTest {
         log.info("STEP 5. Assert if there is successful logout message shown");
         String popupMessage = loginPage.getLoginPopupSuccessMessageText();
         Assert.assertEquals(popupMessage, LOGOUT_SUCCESSFUL_MSG);
-
     }
-
 }
