@@ -23,12 +23,11 @@ public class PostPage extends BasePage {
     @FindBy(xpath="//i[contains(@class,'fas fa-lock ng-star-inserted')]")
     private WebElement lockButton;
 
+
     public PostPage(WebDriver driver, Logger log) {
         super(driver, log);
         PageFactory.initElements(driver, this);
     }
-
-
 
     public void uploadPicture(File file) {
         isElementPresent(uploadField);
@@ -41,8 +40,6 @@ public class PostPage extends BasePage {
         captionElement.sendKeys(caption);
         log.info("CONFIRMATION # The user has provided caption text: " + caption);
     }
-
-
 
     public void clickCreatePostButton() {
         wait.until(ExpectedConditions.visibilityOf(createPostButton));

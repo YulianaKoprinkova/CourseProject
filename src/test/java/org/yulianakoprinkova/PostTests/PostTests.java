@@ -9,7 +9,7 @@ import static org.yulianakoprinkova.LoginTests.LoginHappyPathTests.USER;
 
 public class PostTests extends BaseTest {
 
-    private static final String CAPTION = "Testing the create post CAPTION";
+    private static final String CAPTION = "Test caption";
     File postPicture = new File("src/test/resources/upload/testPic.png");
 
     @Test(priority = 1)

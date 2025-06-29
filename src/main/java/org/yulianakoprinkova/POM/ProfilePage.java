@@ -12,7 +12,7 @@ import java.util.List;
 public class ProfilePage  extends BasePage {
 
 
-    @FindBy (xpath = "//div[contains(@class,'edit-profile-pic ')]")
+    @FindBy (xpath = "//div[contains(@class,'edit-profile-pic')]")
     private WebElement uploadImage;
     @FindBy (id = "upload-img" )
     private WebElement hiddenUploadImage;
@@ -38,18 +38,18 @@ public class ProfilePage  extends BasePage {
         PageFactory.initElements(driver,this);
     }
 
-    public void ClickOnYesButton() {
-        clickOn(areYouSureYesButton);
+    public void providePostComment() {
+        wait.until(ExpectedConditions.visibilityOf(postCommentField));
+        postCommentField.sendKeys("test comment"+ "\n");
+        log.info("CONFIRMATION # The user has provided a comment on their post");
     }
 
     public void ClickOnDeleteButton() {
         clickOn(deletePostButton);
     }
 
-    public void providePostComment() {
-        wait.until(ExpectedConditions.visibilityOf(postCommentField));
-        postCommentField.sendKeys("test comment"+ "\n");
-        log.info("CONFIRMATION # The user has provided a comment on their post");
+    public void ClickOnYesButton() {
+        clickOn(areYouSureYesButton);
     }
 
     Actions action = new Actions(driver);
@@ -87,17 +87,17 @@ public class ProfilePage  extends BasePage {
         return isDeletedMessageVisible;
     }
 
-    public boolean isLockedMessageVisible() {
-        boolean isLockedMessageVisible = false;
+    public boolean isLikedMessageVisible() {
+        boolean isLikedMessageVisible = false;
         try {
-            isLockedMessageVisible = wait.until(ExpectedConditions.visibilityOf(postLikeMessage)).isDisplayed();
+            isLikedMessageVisible = wait.until(ExpectedConditions.visibilityOf(postLikeMessage)).isDisplayed();
             log.info("CONFIRMATION # The Post liked message is displayed.");
         } catch (NoSuchElementException e) {
             e.printStackTrace();
             log.error("ERROR : The Post liked message is not displayed!");
-            isLockedMessageVisible = false;
+            isLikedMessageVisible = false;
         }
-        return isLockedMessageVisible;
+        return isLikedMessageVisible;
     }
 
     public boolean isDislikeMessageVisible() {

@@ -25,6 +25,7 @@ public class PostModal extends BasePage {
             return false;
         }
     }
+
     public String getPostUser() {
         WebElement postUser = modalElement.findElement(By.className("post-user"));
         wait.until(ExpectedConditions.visibilityOf(postUser));
