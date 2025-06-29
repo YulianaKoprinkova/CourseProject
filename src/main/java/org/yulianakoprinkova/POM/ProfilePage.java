@@ -14,6 +14,8 @@ public class ProfilePage  extends BasePage {
 
     @FindBy (xpath = "//div[contains(@class,'edit-profile-pic')]")
     private WebElement uploadImage;
+    @FindBy (id = "nav-link-profile" )
+    private WebElement profileNavLink;
     @FindBy (id = "upload-img" )
     private WebElement hiddenUploadImage;
     @FindBy (xpath = "//i[contains(@class,'like far fa-heart fa-2x')]")
