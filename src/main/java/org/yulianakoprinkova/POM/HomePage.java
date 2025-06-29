@@ -23,40 +23,26 @@ public class HomePage extends BasePage {
     public static final String SUCCESSFUL_LOGIN_MSG = "Successful login!";
     public static final String SUCCESSFUL_LOGOUT_MSG = "Successful logout!";
 
-
     @FindBy (id = "homeIcon")
     private WebElement homeIcon;
-
     @FindBy(id = "nav-link-home")
     private WebElement navBarHomeLink;
-
-    @FindBy(css = "p.h4")
-    private WebElement loginFormTitle;
-
     @FindBy(id = "nav-link-login")
     private WebElement navBarLoginLink;
-
     @FindBy(id = "nav-link-new-post")
     private WebElement navBarNewPostLink;
-
     @FindBy (id = "nav-link-profile")
     private WebElement navBarProfileLink;
-
     @FindBy(id="search-bar")
     private WebElement searchBarInput;
-
     @FindBy(css = "i")
     private WebElement navBarLogoutLink;
-
     @FindBy(id="toast-container")
     private WebElement toastContainer;
-
     @FindBy(xpath = "//a[contains(@class,'post-user')]")
     private WebElement postUser;
-
     @FindBy(xpath = "//button[contains(@class,'btn')]")
     private WebElement followUnfollowButton;
-
     @FindBy(xpath="//div/div/i")
     private WebElement heartButton;
 
@@ -66,13 +52,7 @@ public class HomePage extends BasePage {
     }
 
     public void openHomePage(){
-
         navigateTo(HOME_PAGE_SUFIX);
-    }
-
-    public void clickOnHomeNavBar(){
-        wait.until(ExpectedConditions.visibilityOf(navBarHomeLink));
-        navBarHomeLink.click();
     }
 
     public void clickOnLoginNavBar(){
@@ -128,95 +108,76 @@ public class HomePage extends BasePage {
             }
             initialHeight = currentHeight;
         }
-
         int postCount = driver.findElements(By.xpath("//div/app-post-detail")).size();
         System.out.println("The visible posts on the homepage are : " + postCount);
         return postCount;
     }
 
     public String getSearchBarPlaceholderText(){
-
         return getElementPlaceholderValue(searchBarInput);
     }
 
     public String getPopUpMsg() {
-
         return getElementText(toastContainer);
     }
 
     public boolean isHomeIconShown () {
-
         return isElementPresent(homeIcon);
     }
 
     public boolean isHomeLinkShown() {
-
         return  isElementPresent(navBarHomeLink);
     }
 
     public boolean isHomeLinkClickable() {
-
         return  isElementClickable(navBarHomeLink);
     }
 
     public boolean isLoginLinkShown(){
-
         return isElementPresent(navBarLoginLink);
     }
 
     public boolean isLoginLinkClickable(){
-
         return isElementClickable(navBarLoginLink);
     }
 
     public boolean isNewPostLinkShown(){
-
         return isElementPresent(navBarNewPostLink);
     }
 
     public boolean isNewPostLinkClickable(){
-
         return isElementClickable(navBarNewPostLink);
     }
 
     public boolean isProfileShown(){
-
         return isElementPresent(navBarProfileLink);
     }
 
     public boolean isProfileLinkClickable(){
-
         return isElementClickable(navBarProfileLink);
     }
 
     public boolean isLogoutLinkShown(){
-
         return isElementPresent(navBarLogoutLink);
     }
 
     public boolean isLogoutLinkClickable(){
-
         return isElementClickable(navBarLogoutLink);
     }
 
     public boolean isSearchBarShown(){
-
         return isElementPresent(searchBarInput);
     }
 
     public boolean isSearchBarClickable(){
-
         return isElementClickable(searchBarInput);
     }
 
     public boolean isPostUserShown () {
-
         return isElementPresent(postUser);
     }
 
     public boolean isPostUserClickable(){
-
         return isElementClickable(postUser);
     }
-
 }

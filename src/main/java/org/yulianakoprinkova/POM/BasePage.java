@@ -23,15 +23,11 @@ public abstract class BasePage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(7));
     }
 
-    //NAVIGATE TO PAGE TO BE TESTED
-
     public void navigateTo(String pageURLSUFIX) {
         String urlToBeLoaded = BASE_URL+pageURLSUFIX;
         driver.get(urlToBeLoaded);
         log.info("# CONFIRM: The user has navigated to the following url: "+ urlToBeLoaded);
     }
-
-    //USER ACTIONS ON WEB ELEMENTS
 
     public void clickOn(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -45,26 +41,13 @@ public abstract class BasePage {
         element.clear();
         element.sendKeys(txt);
         log.info("# CONFIRM: The user has provided the text " + txt + " in element " + element);
-
-        //JS executor - DOM completed function that will give us info if the page JS is ready
-        //waitPageToBeFullyLoaded();
     }
 
-    //SUPPORT METHODS FOR INTERACTION WITH WEB ELEMENT TEXTS AND ATTRIBUTES
-
-    //TEXT Interactions
     public String getElementText(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
         String elementText = element.getText();
         log.info("# CONFIRM: The web element text is: " + elementText);
         return elementText;
-    }
-
-    public String getElementAttributeValue(WebElement element){
-        wait.until(ExpectedConditions.visibilityOf(element));
-        String elementAttributeValue = element.getAttribute("value");
-        log.info("# CONFIRM: The web element attribute value is: " + elementAttributeValue);
-        return elementAttributeValue;
     }
 
     public String getElementPlaceholderValue(WebElement element){
@@ -74,12 +57,9 @@ public abstract class BasePage {
         return elementText;
     }
 
-    // BOOLEAN VERIFICATION METHODS
-
     public boolean isElementPresent(WebElement element){
         boolean isWebElementVisible = false;
         String locatorInfo = locatorInfo(element);
-
         log.info("@ ACTION The user is verifying if web element is shown with locator: info " + locatorInfo);
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
@@ -104,8 +84,6 @@ public abstract class BasePage {
         }
         return isWebElementClickable;
     }
-
-    //LOGGING SUPPORT METHODS
 
     private String locatorInfo(WebElement elm ){
         String[] rawWebElmInfo = elm.toString().split("->");

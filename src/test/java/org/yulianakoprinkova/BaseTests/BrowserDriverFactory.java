@@ -26,7 +26,6 @@ public class BrowserDriverFactory {
     }
 
     public WebDriver createDriver() {
-        // Create driver
         log.info("Create driver: " + browser);
 
         switch (browser) {
@@ -51,19 +50,15 @@ public class BrowserDriverFactory {
                 driver.set(new ChromeDriver(configChromeOptions()));
                 break;
         }
-
         return driver.get();
     }
 
     private ChromeOptions configChromeOptions() {
-        //Create path and setting for download folder
         Map<String, Object> prefs = new HashMap<>();
         prefs.put("download.default_directory", System.getProperty("user.dir").concat("\\").concat(DOWNLOAD_DIR));
         ChromeOptions chromeOptions = new ChromeOptions();
-
         chromeOptions.setExperimentalOption("prefs", prefs);
         chromeOptions.setExperimentalOption("excludeSwitches", List.of("disable-popup-blocking"));
-
         chromeOptions.addArguments("incognito");
         chromeOptions.addArguments("disable-popup-blocking");
         chromeOptions.addArguments("--ignore-certificate-errors",
@@ -73,7 +68,6 @@ public class BrowserDriverFactory {
                                     "--disable-gpu");
         chromeOptions.addArguments("--unsafely-treat-insecure-origin-as-secure=http://training.skillo-bg.com:4300/");
         chromeOptions.setAcceptInsecureCerts(true);
-
         return chromeOptions;
     }
 }

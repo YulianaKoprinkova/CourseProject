@@ -100,10 +100,10 @@ public class PostTests extends BaseTest {
         profilePage.clickPost(0);
 
         log.info("STEP 6: Click on Delete Post Button.");
-        profilePage.ClickOnDeleteButton();
+        profilePage.clickOnDeleteButton();
 
         log.info("STEP 7: Confirm deleting post");
-        profilePage.ClickOnYesButton();
+        profilePage.clickOnYesButton();
 
         log.info("STEP 8: Check if Delete message is visible");
         profilePage.isDeletedMessageVisible();

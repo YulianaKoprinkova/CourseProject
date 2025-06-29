@@ -1,6 +1,5 @@
 package org.yulianakoprinkova.POM;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,21 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.io.File;
 
-
 public class PostPage extends BasePage {
     final String POST_PAGE_URL = "http://training.skillo-bg.com:4200/posts/create";
-    @FindBy(css = "img.image-preview")
-    private WebElement image;
-
     @FindBy(css = ".file[type='file']")
     private WebElement uploadField;
     @FindBy(name = "caption")
     private WebElement captionElement;
     @FindBy(id = "create-post")
     private WebElement createPostButton;
-    @FindBy(xpath="//i[contains(@class,'fas fa-lock ng-star-inserted')]")
-    private WebElement lockButton;
-
 
     public PostPage(WebDriver driver, Logger log) {
         super(driver, log);
@@ -46,13 +38,4 @@ public class PostPage extends BasePage {
         createPostButton.click();
         log.info("CONFIRMATION # The user has clicked on the submit post button.");
     }
-
-    public void clickOnLockButton() {
-        wait.until(ExpectedConditions.visibilityOf(lockButton));
-        lockButton.click();
-        log.info("CONFIRMATION # The user has clicked on the lock post button.");
-    }
-
-
-
 }

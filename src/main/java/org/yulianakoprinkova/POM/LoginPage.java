@@ -8,42 +8,28 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class LoginPage extends BasePage {
-    public static final String LOGIN_PAGE_SUFIX = "/users/login";
     private static final String USER = "demoUser111";
     private static final String PASS = "demoUser111";
 
-    //WEBELEMENTS
-
     @FindBy(css = "p.h4")
     private WebElement loginFormTitle;
-
     @FindBy(id = "defaultLoginFormUsername")
     private WebElement usernameInputField;
-
     @FindBy(id = "defaultLoginFormPassword")
     private WebElement passwordInputField;
-
     @FindBy(css = "input")
     private WebElement rememberMeCheckBox;
-
     @FindBy (xpath = "//div/span")
     private WebElement rememberMeCheckBoxText;
-
     @FindBy (xpath = "//p/span")
     private WebElement notAMemberText;
-
     @FindBy(id = "sign-in-button")
     private WebElement loginSubmitButton;
-
     @FindBy(css = "i")
     private WebElement logoutLink;
-
-    //(xpath="//div[contains(@aria-label,\"Successful LoginTests!\")]")
     @FindBy (id = "toast-container")
     private WebElement ToastContainerMessage;
 
-
-    //LOGIN
     public LoginPage(WebDriver driver, Logger log) {
         super(driver, log);
         PageFactory.initElements(driver,this);
@@ -109,10 +95,7 @@ public class LoginPage extends BasePage {
         return getElementText(loginSubmitButton);
     }
 
-    //VERIFICATION METHODS
-
     public boolean isLoginFormHeaderTextShown(){
         return isElementPresent(loginFormTitle);
     }
-
 }

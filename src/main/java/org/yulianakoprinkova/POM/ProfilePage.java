@@ -1,39 +1,28 @@
 package org.yulianakoprinkova.POM;
 
-import net.bytebuddy.asm.Advice;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.io.File;
 import java.util.List;
 
 public class ProfilePage  extends BasePage {
 
-
-    @FindBy (xpath = "//div[contains(@class,'edit-profile-pic')]")
-    private WebElement uploadImage;
-    @FindBy (id = "nav-link-profile" )
-    private WebElement profileNavLink;
-    @FindBy (id = "upload-img" )
-    private WebElement hiddenUploadImage;
-    @FindBy (xpath = "//i[contains(@class,'like far fa-heart fa-2x')]")
-    private WebElement likeButton;
-    @FindBy (xpath = "//i[contains(@class,'ml-4 far fa-thumbs-down fa-2x')]")
-    private WebElement dislikeButton;
     @FindBy (xpath = "//label[contains(@class,'delete-ask')]")
     private WebElement deletePostButton;
     @FindBy (xpath = "//button[contains(@class,'btn btn-primary btn-sm')]")
-    private WebElement areYouSureYesButton;
+    private WebElement yesButton;
     @FindBy (xpath = "//div[contains(@aria-label,'Post Deleted!')]")
     private WebElement confirmDeletionMessage;
-    @FindBy (xpath = "//div[contains(@aria-label,'Post liked')]")
-    private WebElement postLikeMessage;
-    @FindBy (xpath = "//div[contains(@aria-label,'Post disliked')]")
-    private WebElement postDislikeMessage;
     @FindBy(xpath = "//input[contains(@formcontrolname,'content')]")
     private WebElement postCommentField;
+    @FindBy(xpath="//h2")
+    private WebElement userName;
 
     public ProfilePage (WebDriver driver, Logger log) {
         super(driver,log);
@@ -46,17 +35,14 @@ public class ProfilePage  extends BasePage {
         log.info("CONFIRMATION # The user has provided a comment on their post");
     }
 
-    public void ClickOnDeleteButton() {
+    public void clickOnDeleteButton() {
+        wait.until(ExpectedConditions.visibilityOf(deletePostButton));
         clickOn(deletePostButton);
     }
 
-    public void ClickOnYesButton() {
-        clickOn(areYouSureYesButton);
-    }
-
-    Actions action = new Actions(driver);
-    public void HoverOverProfilePicture () {
-        action.moveToElement(uploadImage).perform();
+    public void clickOnYesButton() {
+        wait.until(ExpectedConditions.visibilityOf(yesButton));
+        clickOn(yesButton);
     }
 
     public String getUsername() {
@@ -76,6 +62,10 @@ public class ProfilePage  extends BasePage {
         js.executeScript("return document.readyState").equals("complete");
     }
 
+    public boolean isUserNameVisible(){
+        return isElementPresent(userName);
+    }
+
     public boolean isDeletedMessageVisible() {
         boolean isDeletedMessageVisible = false;
         try {
@@ -87,31 +77,5 @@ public class ProfilePage  extends BasePage {
             isDeletedMessageVisible = false;
         }
         return isDeletedMessageVisible;
-    }
-
-    public boolean isLikedMessageVisible() {
-        boolean isLikedMessageVisible = false;
-        try {
-            isLikedMessageVisible = wait.until(ExpectedConditions.visibilityOf(postLikeMessage)).isDisplayed();
-            log.info("CONFIRMATION # The Post liked message is displayed.");
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-            log.error("ERROR : The Post liked message is not displayed!");
-            isLikedMessageVisible = false;
-        }
-        return isLikedMessageVisible;
-    }
-
-    public boolean isDislikeMessageVisible() {
-        boolean isDislikeMessageVisible = false;
-        try {
-            isDislikeMessageVisible = wait.until(ExpectedConditions.visibilityOf(postDislikeMessage)).isDisplayed();
-            log.info("CONFIRMATION # The Post disliked message is displayed.");
-        } catch (NoSuchElementException e) {
-            e.printStackTrace();
-            log.error("ERROR : The Post disliked message is not displayed!");
-            isDislikeMessageVisible = false;
-        }
-        return isDislikeMessageVisible;
     }
 }

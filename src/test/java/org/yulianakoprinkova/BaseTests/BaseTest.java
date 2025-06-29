@@ -23,7 +23,6 @@ public class BaseTest {
     public static final String DOWNLOAD_DIR = TEST_RESOURCES_DIR.concat("download\\");
     public static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots\\");
     public static final String REPORTS_DIR = TEST_RESOURCES_DIR.concat("reports\\");
-    public static final String UPLOAD_DIR = TEST_RESOURCES_DIR.concat("upload\\");
 
     protected WebDriver driver;
     protected Logger log;
@@ -75,13 +74,10 @@ public class BaseTest {
     private void cleanDirectory(String directoryPath) throws IOException {
         System.out.println("____________________________________________________________");
         File directory = new File(directoryPath);
-
-        //If directory is not shown after git clone of the repo this code will build the path
         if (!directory.exists()) {
             FileUtils.forceMkdir(directory);
             System.out.println("Created folder with path: " + directoryPath);
         }
-
         System.out.println("Deleting unnecessary files from folder with path: "+ directoryPath);
         FileUtils.cleanDirectory(directory);
         String[] fileList = directory.list();
