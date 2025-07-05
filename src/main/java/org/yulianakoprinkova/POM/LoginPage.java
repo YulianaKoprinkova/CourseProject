@@ -28,7 +28,7 @@ public class LoginPage extends BasePage {
     @FindBy(css = "i")
     private WebElement logoutLink;
     @FindBy (id = "toast-container")
-    private WebElement ToastContainerMessage;
+    private WebElement toastContainer;
 
     public LoginPage(WebDriver driver, Logger log) {
         super(driver, log);
@@ -64,6 +64,8 @@ public class LoginPage extends BasePage {
     }
 
     public void clickOnLogOutButton () {
+        wait.until(ExpectedConditions.visibilityOf(loginSubmitButton));
+        wait.until(ExpectedConditions.invisibilityOf(toastContainer));
         logoutLink.click();
     }
 
@@ -88,7 +90,7 @@ public class LoginPage extends BasePage {
     }
 
     public String getLoginPopupSuccessMessageText() {
-        return getElementText(ToastContainerMessage);
+        return getElementText(toastContainer);
     }
 
     public String getSignInButtonLabel(){

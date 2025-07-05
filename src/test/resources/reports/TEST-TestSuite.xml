@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="63.47" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="56.418" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\35988\.jdks\ms-21.0.7\bin"/>
-    <property name="sun.java.command" value="C:\Users\35988\AppData\Local\Temp\surefire11048396884150559002\surefirebooter-20250629201225537_3.jar C:\Users\35988\AppData\Local\Temp\surefire11048396884150559002 2025-06-29T20-12-24_697-jvmRun1 surefire-20250629201225537_1tmp surefire_0-20250629201225537_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\35988\AppData\Local\Temp\surefire2665268095717120945\surefirebooter-20250705190641872_3.jar C:\Users\35988\AppData\Local\Temp\surefire2665268095717120945 2025-07-05T19-06-41_439-jvmRun1 surefire-20250705190641872_1tmp surefire_0-20250705190641872_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\35988\IdeaProjects\Skillo-Final\target\test-classes;C:\Users\35988\IdeaProjects\Skillo-Final\target\classes;C:\Users\35988\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\35988\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\35988\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\35988\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\35988\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\35988\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\35988\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\35988\.m2\repository\com\google\guava\guava\33.3.0-jre\guava-33.3.0-jre.jar;C:\Users\35988\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\35988\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\35988\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\35988\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\35988\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\35988\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\35988\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-api\1.42.1\opentelemetry-api-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-context\1.42.1\opentelemetry-context-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.42.1\opentelemetry-exporter-logging-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.42.1\opentelemetry-sdk-common-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.42.1\opentelemetry-sdk-extension-autoconfigure-spi-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.42.1\opentelemetry-sdk-extension-autoconfigure-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.42.1-alpha\opentelemetry-api-incubator-1.42.1-alpha.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.42.1\opentelemetry-sdk-trace-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.42.1\opentelemetry-sdk-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.42.1\opentelemetry-sdk-metrics-1.42.1.jar;C:\Users\35988\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.42.1\opentelemetry-sdk-logs-1.42.1.jar;C:\Users\35988\.m2\repository\net\bytebuddy\byte-buddy\1.15.1\byte-buddy-1.15.1.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\35988\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\35988\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\35988\.m2\repository\org\apache\logging\log4j\log4j-core\2.23.1\log4j-core-2.23.1.jar;C:\Users\35988\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\35988\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\35988\.m2\repository\org\jetbrains\annotations\26.0.2\annotations-26.0.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\35988\AppData\Local\Temp\surefire11048396884150559002\surefirebooter-20250629201225537_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\35988\AppData\Local\Temp\surefire2665268095717120945\surefirebooter-20250705190641872_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.7+6-LTS"/>
@@ -60,7 +60,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="verifyUserCanCreatePost" classname="org.yulianakoprinkova.PostTests.PostTests" time="16.632">
+  <testcase name="verifyUserCanCreatePost" classname="org.yulianakoprinkova.PostTests.PostTests" time="15.16">
     <system-out><![CDATA[____________________________________________________________
 Deleting unnecessary files from folder with path: src\test\resources\reports\
 Deleted all files in Directory: src\test\resources\reports\
@@ -69,71 +69,71 @@ ____________________________________________________________
 Deleting unnecessary files from folder with path: src\test\resources\screenshots\
 Deleted all files in Directory: src\test\resources\screenshots\
 ***   ***   ***
-[main] 20:12:28,735 INFO  [GUI TAF]  ==== TEST CASE NAME : verifyUserCanCreatePost ON DATE : Sun Jun 29 20:12:28 EEST 2025  ==== 
-[main] 20:12:28,748 INFO  [GUI TAF] Create driver: chrome
-[main] 20:12:32,095 INFO  [GUI TAF] STEP 1: Navigating to Home page 
-[main] 20:12:33,194 INFO  [GUI TAF] # CONFIRM: The user has navigated to the following url: http://training.skillo-bg.com:4300/posts/all
-[main] 20:12:33,195 INFO  [GUI TAF] STEP 2: Navigating to Login page 
-[main] 20:12:33,782 INFO  [GUI TAF] STEP 3: Logging with registered user credentials 
-[main] 20:12:34,736 INFO  [GUI TAF] STEP 4: Click on New Post navigation bar 
-[main] 20:12:35,437 INFO  [GUI TAF] STEP 5: Upload picture 
-[main] 20:12:35,478 INFO  [GUI TAF] @ ACTION The user is verifying if web element is shown with locator: info LOCATOR STRATEGY BY :  CSS SELECTOR WITH LOCATOR EXPRESSION .file[type='file']]
-[main] 20:12:42,794 ERROR [GUI TAF] * ERROR NOT SHOWN Web element with LOCATOR STRATEGY BY :  CSS SELECTOR WITH LOCATOR EXPRESSION .file[type='file']]
-[main] 20:12:42,891 INFO  [GUI TAF] CONFIRMATION # The file was successfully uploaded.
-[main] 20:12:42,892 INFO  [GUI TAF] STEP 6: Provide post caption
-[main] 20:12:43,498 INFO  [GUI TAF] CONFIRMATION # The user has provided caption text: Test caption
-[main] 20:12:43,498 INFO  [GUI TAF] STEP 7: Click on Create Post Button
-[main] 20:12:43,703 INFO  [GUI TAF] CONFIRMATION # The user has clicked on the submit post button.
-[main] 20:12:43,704 INFO  [GUI TAF] STEP 8: Check if new post is shown on Profile page
-[main] 20:12:47,964 INFO  [GUI TAF] STEP 9: Check if the image in the new post is visible
-[main] 20:12:48,633 INFO  [GUI TAF] STEP 10: Check if the user name on the post is correct
+[main] 19:06:44,285 INFO  [GUI TAF]  ==== TEST CASE NAME : verifyUserCanCreatePost ON DATE : Sat Jul 05 19:06:44 EEST 2025  ==== 
+[main] 19:06:44,294 INFO  [GUI TAF] Create driver: chrome
+[main] 19:06:46,269 INFO  [GUI TAF] STEP 1: Navigating to Home page 
+[main] 19:06:46,962 INFO  [GUI TAF] # CONFIRM: The user has navigated to the following url: http://training.skillo-bg.com:4300/posts/all
+[main] 19:06:46,963 INFO  [GUI TAF] STEP 2: Navigating to Login page 
+[main] 19:06:47,176 INFO  [GUI TAF] STEP 3: Logging with registered user credentials 
+[main] 19:06:48,114 INFO  [GUI TAF] STEP 4: Click on New Post navigation bar 
+[main] 19:06:48,852 INFO  [GUI TAF] STEP 5: Upload picture 
+[main] 19:06:48,875 INFO  [GUI TAF] @ ACTION The user is verifying if web element is shown with locator: info LOCATOR STRATEGY BY :  CSS SELECTOR WITH LOCATOR EXPRESSION .file[type='file']]
+[main] 19:06:56,210 ERROR [GUI TAF] * ERROR NOT SHOWN Web element with LOCATOR STRATEGY BY :  CSS SELECTOR WITH LOCATOR EXPRESSION .file[type='file']]
+[main] 19:06:56,263 INFO  [GUI TAF] CONFIRMATION # The file was successfully uploaded.
+[main] 19:06:56,263 INFO  [GUI TAF] STEP 6: Provide post caption
+[main] 19:06:56,638 INFO  [GUI TAF] CONFIRMATION # The user has provided caption text: Test caption
+[main] 19:06:56,638 INFO  [GUI TAF] STEP 7: Click on Create Post Button
+[main] 19:06:56,765 INFO  [GUI TAF] CONFIRMATION # The user has clicked on the submit post button.
+[main] 19:06:56,765 INFO  [GUI TAF] STEP 8: Check if new post is shown on Profile page
+[main] 19:07:00,762 INFO  [GUI TAF] STEP 9: Check if the image in the new post is visible
+[main] 19:07:01,303 INFO  [GUI TAF] STEP 10: Check if the user name on the post is correct
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jun 29, 2025 8:12:29 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+Jul 05, 2025 7:06:44 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (136.0.7103.92) detected in PATH at C:\Browsers\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.122); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry
-Jun 29, 2025 8:12:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 05, 2025 7:06:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 29, 2025 8:12:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 05, 2025 7:06:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.122. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="verifyUserCanDeletePost" classname="org.yulianakoprinkova.PostTests.PostTests" time="30.386">
-    <system-out><![CDATA[[main] 20:12:48,728 INFO  [GUI TAF] LAST STEP: Closing driver
-[main] 20:12:49,288 INFO  [GUI TAF]  ==== TEST CASE NAME : verifyUserCanDeletePost ON DATE : Sun Jun 29 20:12:49 EEST 2025  ==== 
-[main] 20:12:49,288 INFO  [GUI TAF] Create driver: chrome
-[main] 20:12:51,634 INFO  [GUI TAF] STEP 1: Navigating to Home page 
-[main] 20:12:52,696 INFO  [GUI TAF] # CONFIRM: The user has navigated to the following url: http://training.skillo-bg.com:4300/posts/all
-[main] 20:12:52,696 INFO  [GUI TAF] STEP 2: Navigating to Login page 
-[main] 20:12:53,423 INFO  [GUI TAF] STEP 3: Logging with registered user credentials 
-[main] 20:12:54,360 INFO  [GUI TAF] STEP 4. Navigating to Profile page.
-[main] 20:12:55,170 INFO  [GUI TAF] The user has clicked on element: [[ChromeDriver: chrome on windows (81589b6d9942faabbf3000fc77159a9f)] -> id: nav-link-profile]
-[main] 20:12:55,171 INFO  [GUI TAF] STEP 5: Click on post on Profile page.
-[main] 20:12:56,163 INFO  [GUI TAF] STEP 6: Click on Delete Post Button.
-[main] 20:13:21,612 INFO  [GUI TAF] The user has clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //label[contains(@class,'delete-ask')]'
-[main] 20:13:21,612 INFO  [GUI TAF] STEP 7: Confirm deleting post
-[main] 20:13:21,823 INFO  [GUI TAF] The user has clicked on element: [[ChromeDriver: chrome on windows (81589b6d9942faabbf3000fc77159a9f)] -> xpath: //button[contains(@class,'btn btn-primary btn-sm')]]
-[main] 20:13:21,824 INFO  [GUI TAF] STEP 8: Check if Delete message is visible
-[main] 20:13:22,018 INFO  [GUI TAF] CONFIRMATION # The Post Deleted! message is displayed.
+  <testcase name="verifyUserCanDeletePost" classname="org.yulianakoprinkova.PostTests.PostTests" time="30.144">
+    <system-out><![CDATA[[main] 19:07:01,430 INFO  [GUI TAF] LAST STEP: Closing driver
+[main] 19:07:01,924 INFO  [GUI TAF]  ==== TEST CASE NAME : verifyUserCanDeletePost ON DATE : Sat Jul 05 19:07:01 EEST 2025  ==== 
+[main] 19:07:01,924 INFO  [GUI TAF] Create driver: chrome
+[main] 19:07:03,700 INFO  [GUI TAF] STEP 1: Navigating to Home page 
+[main] 19:07:04,515 INFO  [GUI TAF] # CONFIRM: The user has navigated to the following url: http://training.skillo-bg.com:4300/posts/all
+[main] 19:07:04,515 INFO  [GUI TAF] STEP 2: Navigating to Login page 
+[main] 19:07:04,724 INFO  [GUI TAF] STEP 3: Logging with registered user credentials 
+[main] 19:07:06,042 INFO  [GUI TAF] STEP 4. Navigating to Profile page.
+[main] 19:07:07,020 INFO  [GUI TAF] The user has clicked on element: [[ChromeDriver: chrome on windows (8d288dc7f435fd3b7ff607257fa544fd)] -> id: nav-link-profile]
+[main] 19:07:07,020 INFO  [GUI TAF] STEP 5: Click on post on Profile page.
+[main] 19:07:08,185 INFO  [GUI TAF] STEP 6: Click on Delete Post Button.
+[main] 19:07:33,445 INFO  [GUI TAF] The user has clicked on element: Proxy element for: DefaultElementLocator 'By.xpath: //label[contains(@class,'delete-ask')]'
+[main] 19:07:33,445 INFO  [GUI TAF] STEP 7: Confirm deleting post
+[main] 19:07:33,605 INFO  [GUI TAF] The user has clicked on element: [[ChromeDriver: chrome on windows (8d288dc7f435fd3b7ff607257fa544fd)] -> xpath: //button[contains(@class,'btn btn-primary btn-sm')]]
+[main] 19:07:33,605 INFO  [GUI TAF] STEP 8: Check if Delete message is visible
+[main] 19:07:33,844 INFO  [GUI TAF] CONFIRMATION # The Post Deleted! message is displayed.
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 8:12:50 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+    <system-err><![CDATA[Jul 05, 2025 7:07:02 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (136.0.7103.92) detected in PATH at C:\Browsers\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.122); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry
-Jun 29, 2025 8:12:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 05, 2025 7:07:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 29, 2025 8:12:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 05, 2025 7:07:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.122. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="verifyTheUserCanRegisterWithValidCredentials" classname="org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests" time="3.806">
-    <failure message="expected [Successful register!] but found [Email taken]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Successful register!] but found [Email taken]
+  <testcase name="verifyTheUserCanRegisterWithValidCredentials" classname="org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests" time="2.802">
+    <failure message="expected [Successful register!] but found [Username taken]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [Successful register!] but found [Username taken]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
 	at org.testng.Assert.assertEquals(Assert.java:666)
-	at org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials(RegisterHappyPathTests.java:59)
+	at org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials(RegisterHappyPathTests.java:58)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -165,39 +165,37 @@ WARNING: Unable to find version of CDP to use for 137.0.7151.122. You may need t
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
 ]]></failure>
-    <system-out><![CDATA[[main] 20:13:22,020 INFO  [GUI TAF] LAST STEP: Closing driver
-[main] 20:13:22,474 INFO  [GUI TAF]  ==== TEST CASE NAME : verifyTheUserCanRegisterWithValidCredentials ON DATE : Sun Jun 29 20:13:22 EEST 2025  ==== 
-[main] 20:13:22,475 INFO  [GUI TAF] Create driver: chrome
-[main] 20:13:24,624 INFO  [GUI TAF] STEP 1: Navigating to Registration Page 
-[main] 20:13:25,832 INFO  [GUI TAF] # CONFIRM: The user has navigated to the following url: http://training.skillo-bg.com:4300/users/register
-[main] 20:13:25,833 INFO  [GUI TAF] STEP 2. Verify the user is on the Registration page 
-[main] 20:13:25,862 INFO  [GUI TAF] STEP 3. Verify the registration form title 
-[main] 20:13:25,998 INFO  [GUI TAF] # CONFIRM: The web element text is: Sign up
-[main] 20:13:25,998 INFO  [GUI TAF] STEP 4. Provide registration username
-[main] 20:13:26,389 INFO  [GUI TAF] # CONFIRM: The user has provided the text User89 in element [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> xpath: //input[contains(@name, "username")]]
-[main] 20:13:26,389 INFO  [GUI TAF] STEP 5. Provide registration email
-[main] 20:13:26,796 INFO  [GUI TAF] # CONFIRM: The user has provided the text user24@gmail.com in element [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> xpath: //input[contains(@type, "email")]]
-[main] 20:13:26,796 INFO  [GUI TAF] STEP 6. Provide registration birthdate
-[main] 20:13:27,035 INFO  [GUI TAF] # CONFIRM: The user has provided the text 22022022 in element [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> xpath: //input[contains(@formcontrolname, "birthDate")]]
-[main] 20:13:27,035 INFO  [GUI TAF] STEP 7. Provide new password
-[main] 20:13:27,314 INFO  [GUI TAF] # CONFIRM: The user has provided the text 22022022!A in element [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> id: defaultRegisterFormPassword]
-[main] 20:13:27,314 INFO  [GUI TAF] STEP 8. Confirm password
-[main] 20:13:27,574 INFO  [GUI TAF] # CONFIRM: The user has provided the text 22022022!A in element [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> id: defaultRegisterPhonePassword]
-[main] 20:13:27,574 INFO  [GUI TAF] STEP 9. Provide public info
-[main] 20:13:27,858 INFO  [GUI TAF] # CONFIRM: The user has provided the text Public profile in element [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> xpath: //textarea]
-[main] 20:13:27,859 INFO  [GUI TAF] STEP 10. Click on Sign In button
-[main] 20:13:28,120 INFO  [GUI TAF] The user has clicked on element: [[ChromeDriver: chrome on windows (47a946be8e4c5c89015d11561894b932)] -> id: sign-in-button]
-[main] 20:13:28,120 INFO  [GUI TAF] STEP 11. Assert if successful registration popup message is shown
-[main] 20:13:28,316 INFO  [GUI TAF] @ ACTION The user is verifying if web element is shown with locator: info LOCATOR STRATEGY BY :  ID WITH LOCATOR EXPRESSION toast-container]
-[main] 20:13:28,358 INFO  [GUI TAF] # CONFIRM The web element is shown with info: LOCATOR STRATEGY BY :  ID WITH LOCATOR EXPRESSION toast-container]
-[main] 20:13:28,358 INFO  [GUI TAF] STEP 12. Assert correct text of successful register message is shown
-[main] 20:13:28,413 INFO  [GUI TAF] # CONFIRM: The web element text is: Email taken
+    <system-out><![CDATA[[main] 19:07:33,846 INFO  [GUI TAF] LAST STEP: Closing driver
+[main] 19:07:34,095 INFO  [GUI TAF]  ==== TEST CASE NAME : verifyTheUserCanRegisterWithValidCredentials ON DATE : Sat Jul 05 19:07:34 EEST 2025  ==== 
+[main] 19:07:34,097 INFO  [GUI TAF] Create driver: chrome
+[main] 19:07:35,498 INFO  [GUI TAF] STEP 1: Navigating to Registration Page 
+[main] 19:07:36,292 INFO  [GUI TAF] # CONFIRM: The user has navigated to the following url: http://training.skillo-bg.com:4300/users/register
+[main] 19:07:36,294 INFO  [GUI TAF] STEP 2. Verify the user is on the Registration page 
+[main] 19:07:36,307 INFO  [GUI TAF] STEP 3. Verify the registration form title 
+[main] 19:07:36,367 INFO  [GUI TAF] # CONFIRM: The web element text is: Sign up
+[main] 19:07:36,368 INFO  [GUI TAF] STEP 4. Provide registration username
+[main] 19:07:36,611 INFO  [GUI TAF] # CONFIRM: The user has provided the text User91 in element [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> xpath: //input[contains(@name, "username")]]
+[main] 19:07:36,611 INFO  [GUI TAF] STEP 5. Provide registration email
+[main] 19:07:36,976 INFO  [GUI TAF] # CONFIRM: The user has provided the text user151@gmail.com in element [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> xpath: //input[contains(@type, "email")]]
+[main] 19:07:36,976 INFO  [GUI TAF] STEP 6. Provide registration birthdate
+[main] 19:07:37,219 INFO  [GUI TAF] # CONFIRM: The user has provided the text 22022022 in element [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> xpath: //input[contains(@formcontrolname, "birthDate")]]
+[main] 19:07:37,219 INFO  [GUI TAF] STEP 7. Provide new password
+[main] 19:07:37,405 INFO  [GUI TAF] # CONFIRM: The user has provided the text 22022022!A in element [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> id: defaultRegisterFormPassword]
+[main] 19:07:37,405 INFO  [GUI TAF] STEP 8. Confirm password
+[main] 19:07:37,585 INFO  [GUI TAF] # CONFIRM: The user has provided the text 22022022!A in element [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> id: defaultRegisterPhonePassword]
+[main] 19:07:37,585 INFO  [GUI TAF] STEP 9. Provide public info
+[main] 19:07:37,838 INFO  [GUI TAF] # CONFIRM: The user has provided the text Public profile in element [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> xpath: //textarea]
+[main] 19:07:37,838 INFO  [GUI TAF] STEP 10. Click on Sign In button
+[main] 19:07:38,098 INFO  [GUI TAF] The user has clicked on element: [[ChromeDriver: chrome on windows (5a40ab869733e61ac17ae3987bc45caa)] -> id: sign-in-button]
+[main] 19:07:38,098 INFO  [GUI TAF] STEP 11. Assert if successful registration popup message is shown
+[main] 19:07:38,098 INFO  [GUI TAF] STEP 12. Assert correct text of successful register message is shown
+[main] 19:07:38,284 INFO  [GUI TAF] # CONFIRM: The web element text is: Username taken
 ]]></system-out>
-    <system-err><![CDATA[Jun 29, 2025 8:13:23 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
+    <system-err><![CDATA[Jul 05, 2025 7:07:34 PM org.openqa.selenium.manager.SeleniumManager lambda$runCommand$1
 WARNING: The chromedriver version (136.0.7103.92) detected in PATH at C:\Browsers\chromedriver.exe might not be compatible with the detected chrome version (137.0.7151.122); currently, chromedriver 137.0.7151.119 is recommended for chrome 137.*, so it is advised to delete the driver in PATH and retry
-Jun 29, 2025 8:13:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 05, 2025 7:07:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 137
-Jun 29, 2025 8:13:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jul 05, 2025 7:07:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 137.0.7151.122. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.25.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>

@@ -36,10 +36,44 @@ public class LoginHappyPathTests extends BaseTest {
         log.info("STEP 4.: The user gets successfully to the LoginTests page");
         LoginPage loginPage = new LoginPage(super.driver,log);
 
+        log.info("STEP 5. The user enters a username");
+        loginPage.provideUser(USER);
+
+        log.info("STEP 6. The user enters a password");
+        loginPage.providePass(PASS);
+
+        log.info("STEP 7. The user clicks on the remember-me checkbox");
+        loginPage.clickOnRememberMeCheckBox();
+
+        log.info("STEP 8. The user clicks on the Sign In Button");
+        loginPage.clickOnLoginFormSubmitButton();
+
+        log.info("STEP 9. Assert if there is successful Login message shown");
+        String popupMessage = loginPage.getLoginPopupSuccessMessageText();
+        Assert.assertEquals(popupMessage, LOGIN_SUCCESSFUL_MSG);
+    }
+
+    @Test (priority = 2)
+    public void verifyLoginPageForm() {
+
+        log.info("STEP 1: The Skillo Home Page is opened by unlogged user");
+        HomePage homePage = new HomePage(super.driver, log);
+        homePage.openHomePage();
+
+        log.info("STEP 2. Verify that the Login link is presented on the home page");
+        boolean isShownNavBarLoginLink = homePage.isLoginLinkShown();
+        Assert.assertTrue(isShownNavBarLoginLink);
+
+        log.info("STEP 3: The user is navigating to the Login page by clicking on the navigation bar Login link");
+        homePage.clickOnLoginNavBar();
+
+        log.info("STEP 4.: The user gets successfully to the Login page");
+        LoginPage loginPage = new LoginPage(super.driver,log);
+
         log.info("STEP 5. Assert if the Login form title is shown");
         Assert.assertTrue(loginPage.isLoginFormHeaderTextShown());
 
-        log.info("STEP 6.: The LoginTests form has the correct title");
+        log.info("STEP 6.: Assert the Login form has the correct title");
         String actualLoginFormHeaderText = loginPage.getLoginFormHeaderText();
         Assert.assertEquals(actualLoginFormHeaderText,LOGIN_FORM_TITLE);
 
@@ -47,37 +81,21 @@ public class LoginHappyPathTests extends BaseTest {
         String actualUsernameInputFieldPlaceholderText = loginPage.getUserNamePlaceholderText();
         Assert.assertEquals(actualUsernameInputFieldPlaceholderText,LOGIN_FORM_USERNAME_PLACEHOLDER_TEXT);
 
-        log.info("STEP 8. The user enters a username");
-        loginPage.provideUser(USER);
-
-        log.info("STEP 9. Assert the password field placeholder text is correct ");
+        log.info("STEP 8. Assert the password field placeholder text is correct ");
         String actualPasswordInputFieldPlaceholderText = loginPage.getPasswordPlaceholderText();
         Assert.assertEquals(actualPasswordInputFieldPlaceholderText,LOGIN_FORM_PASSWORD_PLACEHOLDER_TEXT);
 
-        log.info("STEP 10. The user enters a password");
-        loginPage.providePass(PASS);
-
-        log.info("STEP 11. Assert the remember-me checkbox text");
+        log.info("STEP 9. Assert the remember-me checkbox text is correct");
         String rememberMeCheckBoxText = loginPage.getRememberMeText();
         Assert.assertEquals(rememberMeCheckBoxText, LOGIN_FORM_CHECKBOX_TEXT);
 
-        log.info("STEP 12. The user clicks on the remember-me checkbox");
-        loginPage.clickOnRememberMeCheckBox();
-
-        log.info("STEP 13. Assert that the Sign In Button label is correct");
+        log.info("STEP 10. Assert that the Sign In Button label is correct");
         String actualLoginButtonText = loginPage.getSignInButtonLabel();
         Assert.assertEquals(actualLoginButtonText, LOGIN_FORM_BUTTON_TEXT);
 
         log.info("STEP 14. Assert not-a-member text on form");
         String actualNotAMemberText = loginPage.getLoginFormNotAMemberText();
         Assert.assertEquals(actualNotAMemberText, LOGIN_FORM_NOT_A_MEMBER);
-
-        log.info("STEP 15. The user clicks on the Sign In Button");
-        loginPage.clickOnLoginFormSubmitButton();
-
-        log.info("STEP 16. Assert if there is successful Login message shown");
-        String popupMessage = loginPage.getLoginPopupSuccessMessageText();
-        Assert.assertEquals(popupMessage, LOGIN_SUCCESSFUL_MSG);
     }
 
     @Test (priority=2)

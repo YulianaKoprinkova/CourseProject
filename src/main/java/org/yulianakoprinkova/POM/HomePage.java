@@ -77,16 +77,19 @@ public class HomePage extends BasePage {
 
     public void clickOnFollowUnfollowButton () {
         wait.until(ExpectedConditions.visibilityOf(followUnfollowButton));
+        wait.until(ExpectedConditions.invisibilityOf(toastContainer));
         clickOn(followUnfollowButton);
     }
 
-    public void clickOnLogoutLink(){
+    public void clickOnLogoutLink() throws InterruptedException {
         wait.until(ExpectedConditions.visibilityOf(navBarLogoutLink));
+        wait.until(ExpectedConditions.invisibilityOf(toastContainer));
         navBarLogoutLink.click();
     }
 
     public void clickOnHeartButton(){
         wait.until(ExpectedConditions.visibilityOf(heartButton));
+        wait.until(ExpectedConditions.invisibilityOf(toastContainer));
         heartButton.click();
     }
 
@@ -121,11 +124,11 @@ public class HomePage extends BasePage {
         return getElementText(toastContainer);
     }
 
-    public boolean isHomeIconShown () {
+    public boolean isHomeIconVisible() {
         return isElementPresent(homeIcon);
     }
 
-    public boolean isHomeLinkShown() {
+    public boolean isHomeLinkVisible() {
         return  isElementPresent(navBarHomeLink);
     }
 
@@ -149,7 +152,7 @@ public class HomePage extends BasePage {
         return isElementClickable(navBarNewPostLink);
     }
 
-    public boolean isProfileShown(){
+    public boolean isProfileVisible(){
         return isElementPresent(navBarProfileLink);
     }
 
@@ -157,7 +160,7 @@ public class HomePage extends BasePage {
         return isElementClickable(navBarProfileLink);
     }
 
-    public boolean isLogoutLinkShown(){
+    public boolean isLogoutLinkVisible(){
         return isElementPresent(navBarLogoutLink);
     }
 
@@ -165,7 +168,7 @@ public class HomePage extends BasePage {
         return isElementClickable(navBarLogoutLink);
     }
 
-    public boolean isSearchBarShown(){
+    public boolean isSearchBarVisible(){
         return isElementPresent(searchBarInput);
     }
 
@@ -173,7 +176,7 @@ public class HomePage extends BasePage {
         return isElementClickable(searchBarInput);
     }
 
-    public boolean isPostUserShown () {
+    public boolean isPostUserVisible() {
         return isElementPresent(postUser);
     }
 

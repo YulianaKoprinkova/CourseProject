@@ -51,12 +51,11 @@ public class RegisterHappyPathTests extends BaseTest{
         regPage.clickOnSubmitBtn();
 
         log.info("STEP 11. Assert if successful registration popup message is shown");
-        Boolean regPopupMessage = regPage.isRegFormSuccessMessageShown();
         Assert.assertTrue(true, REGISTER_SUCCESSFUL_MSG);
 
         log.info("STEP 12. Assert correct text of successful register message is shown");
-        String registPopupMessage = regPage.getToastContainerText();
-        Assert.assertEquals(registPopupMessage, REGISTER_SUCCESSFUL_MSG);
+        String registerPopupMessage = regPage.getToastContainerText();
+        Assert.assertEquals(registerPopupMessage, REGISTER_SUCCESSFUL_MSG);
 
         log.info("STEP 11. Assert if user is on home page for registered users: ");
 
@@ -66,7 +65,7 @@ public class RegisterHappyPathTests extends BaseTest{
         Assert.assertEquals(HomePageTitle,HOMEPAGE_TITLE);
 
         log.info("STEP 11.2. Assert if Logout Link is shown");
-        Boolean LogoutLinkShown = homePage.isLogoutLinkShown();
+        Boolean LogoutLinkShown = homePage.isLogoutLinkVisible();
         Assert.assertEquals(true, LogoutLinkShown);
 
         log.info("STEP 11.3. Assert if New Post Link is shown");
@@ -74,7 +73,7 @@ public class RegisterHappyPathTests extends BaseTest{
         Assert.assertEquals(true, newPostLinkIsShown);
 
         log.info("STEP 11.4. Assert if Profile Link is shown");
-        Boolean ProfileLinkIsShown = homePage.isProfileShown();
+        Boolean ProfileLinkIsShown = homePage.isProfileVisible();
         Assert.assertEquals(true, ProfileLinkIsShown);
 
     }

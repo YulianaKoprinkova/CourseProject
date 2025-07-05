@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.io.File;
 import static org.yulianakoprinkova.LoginTests.LoginHappyPathTests.USER;
+import static org.yulianakoprinkova.POM.HomePage.SUCCESSFUL_LOGOUT_MSG;
 
 public class PostTests extends BaseTest {
 
@@ -79,7 +80,7 @@ public class PostTests extends BaseTest {
         profilePage.providePostComment();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void verifyUserCanDeletePost() {
         log.info("STEP 1: Navigating to Home page ");
         HomePage homePage = new HomePage(super.driver, log);

@@ -40,7 +40,7 @@ public class RegistrationPage extends BasePage {
 
     public String newUsername() {
         int randomNumberForUsername = (int)(Math.random() * 101);
-        String username = ("User" + randomNumberForUsername);
+        String username = ("User1" + randomNumberForUsername);
         return username;
     }
 
@@ -51,7 +51,7 @@ public class RegistrationPage extends BasePage {
 
     public String newValidEmail() {
         int randomNumberForEmail = (int)(Math.random() * 101);
-        String email = "user1" + randomNumberForEmail + "@gmail.com";
+        String email = "user12" + randomNumberForEmail + "@gmail.com";
         return email;
     }
 
@@ -89,9 +89,5 @@ public class RegistrationPage extends BasePage {
 
     public String getToastContainerText() {
         return getElementText(toastContainerSuccessRegMessage);
-    }
-
-    public boolean isRegFormSuccessMessageShown(){
-        return isElementPresent(toastContainerSuccessRegMessage);
     }
 }
