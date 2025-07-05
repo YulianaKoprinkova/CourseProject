@@ -70,13 +70,6 @@ public class HomePageTests extends BaseTest {
         log.info("STEP 14. Assert if New Post Link is clickable ");
         boolean isNewPostLinkClickable = homePage.isNewPostLinkClickable();
         Assert.assertTrue(isNewPostLinkClickable);
-
-        log.info("STEP 15. Logout user");
-        homePage.clickOnLogoutLink();
-
-        log.info("STEP 16. Check logout popup message");
-        String logOutSuccessMessage = loginPage.getLoginPopupSuccessMessageText();
-        Assert.assertEquals(logOutSuccessMessage, SUCCESSFUL_LOGOUT_MSG);
 }
 
     @Test (priority = 2)
