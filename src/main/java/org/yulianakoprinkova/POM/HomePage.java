@@ -81,7 +81,7 @@ public class HomePage extends BasePage {
         clickOn(followUnfollowButton);
     }
 
-    public void clickOnLogoutLink() throws InterruptedException {
+    public void clickOnLogoutLink() {
         wait.until(ExpectedConditions.visibilityOf(navBarLogoutLink));
         wait.until(ExpectedConditions.invisibilityOf(toastContainer));
         navBarLogoutLink.click();
@@ -94,8 +94,7 @@ public class HomePage extends BasePage {
     }
 
     public String getTitle(){
-        String title = driver.getTitle();
-        return title;
+        return driver.getTitle();
     }
 
     public int getPostCount (WebDriver driver) {

@@ -5,6 +5,9 @@ import org.yulianakoprinkova.POM.LoginPage;
 import org.yulianakoprinkova.BaseTests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.Objects;
+
 import static org.yulianakoprinkova.POM.HomePage.*;
 
 public class HomePageTests extends BaseTest {
@@ -136,7 +139,7 @@ public class HomePageTests extends BaseTest {
 
         log.info("STEP 6. Assert popup message text for followed / unfollowed user ");
         String popupMessageText = homePageLogged.getPopUpMsg();
-        if (homePageLogged.buttonTextCheck() == "Follow") {
+        if (Objects.equals(homePageLogged.buttonTextCheck(), "Follow")) {
             Assert.assertEquals(popupMessageText,FOLLOW_SUCCESSFUL_MSG);
         } else {
             Assert.assertEquals(popupMessageText, UNFOLLOW_SUCCESSFUL_MSG);

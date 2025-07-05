@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-05T19:06:43 EEST" name="All Test Suite" finished-at="2025-07-05T19:07:38 EEST" duration-ms="55468">
+  <suite started-at="2025-07-05T19:20:02 EEST" name="All Test Suite" finished-at="2025-07-05T19:21:00 EEST" duration-ms="58337">
     <groups>
     </groups>
-    <test started-at="2025-07-05T19:06:43 EEST" name="C:/Users/35988/IdeaProjects/Skillo-Final" finished-at="2025-07-05T19:07:38 EEST" duration-ms="55468">
+    <test started-at="2025-07-05T19:20:02 EEST" name="C:/Users/35988/IdeaProjects/Skillo-Final" finished-at="2025-07-05T19:21:00 EEST" duration-ms="58337">
       <class name="org.yulianakoprinkova.PostTests.PostTests">
-        <test-method is-config="true" signature="setupTestSuite()[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:06:43 EEST" name="setupTestSuite" finished-at="2025-07-05T19:06:43 EEST" duration-ms="125" status="PASS">
+        <test-method is-config="true" signature="setupTestSuite()[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:02 EEST" name="setupTestSuite" finished-at="2025-07-05T19:20:02 EEST" duration-ms="124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTestSuite -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:06:43 EEST" name="setUp" finished-at="2025-07-05T19:06:46 EEST" duration-ms="2698" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:02 EEST" name="setUp" finished-at="2025-07-05T19:20:06 EEST" duration-ms="4162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCanCreatePost()[pri:1, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:06:46 EEST" name="verifyUserCanCreatePost" finished-at="2025-07-05T19:07:01 EEST" duration-ms="15160" status="PASS">
+        <test-method signature="verifyUserCanCreatePost()[pri:1, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:06 EEST" name="verifyUserCanCreatePost" finished-at="2025-07-05T19:20:21 EEST" duration-ms="14687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreatePost -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:07:01 EEST" name="tearDown" finished-at="2025-07-05T19:07:01 EEST" duration-ms="496" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:21 EEST" name="tearDown" finished-at="2025-07-05T19:20:21 EEST" duration-ms="397" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,7 +42,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:07:01 EEST" name="setUp" finished-at="2025-07-05T19:07:03 EEST" duration-ms="1774" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:21 EEST" name="setUp" finished-at="2025-07-05T19:20:23 EEST" duration-ms="1698" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,11 +58,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserCanDeletePost()[pri:3, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:07:03 EEST" name="verifyUserCanDeletePost" finished-at="2025-07-05T19:07:33 EEST" duration-ms="30146" status="PASS">
+        <test-method signature="verifyUserCanDeletePost()[pri:3, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:23 EEST" name="verifyUserCanDeletePost" finished-at="2025-07-05T19:20:52 EEST" duration-ms="29801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanDeletePost -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:07:33 EEST" name="tearDown" finished-at="2025-07-05T19:07:34 EEST" duration-ms="249" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:20:52 EEST" name="tearDown" finished-at="2025-07-05T19:20:53 EEST" duration-ms="396" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,13 +73,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="cleanFiles()[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:07:39 EEST" name="cleanFiles" finished-at="2025-07-05T19:07:39 EEST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="cleanFiles()[pri:0, instance:org.yulianakoprinkova.PostTests.PostTests@15ff3e9e]" started-at="2025-07-05T19:21:00 EEST" name="cleanFiles" finished-at="2025-07-05T19:21:00 EEST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanFiles -->
       </class> <!-- org.yulianakoprinkova.PostTests.PostTests -->
       <class name="org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309]" started-at="2025-07-05T19:07:34 EEST" name="setUp" finished-at="2025-07-05T19:07:35 EEST" duration-ms="1401" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309]" started-at="2025-07-05T19:20:53 EEST" name="setUp" finished-at="2025-07-05T19:20:55 EEST" duration-ms="2546" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,61 +95,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309]" started-at="2025-07-05T19:07:35 EEST" name="verifyTheUserCanRegisterWithValidCredentials" finished-at="2025-07-05T19:07:38 EEST" duration-ms="2796" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Successful register!] but found [Username taken]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Successful register!] but found [Username taken]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials(RegisterHappyPathTests.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309]" started-at="2025-07-05T19:20:55 EEST" name="verifyTheUserCanRegisterWithValidCredentials" finished-at="2025-07-05T19:21:00 EEST" duration-ms="4371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTheUserCanRegisterWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309]" started-at="2025-07-05T19:07:38 EEST" name="tearDown" finished-at="2025-07-05T19:07:38 EEST" duration-ms="689" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309]" started-at="2025-07-05T19:21:00 EEST" name="tearDown" finished-at="2025-07-05T19:21:00 EEST" duration-ms="222" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTheUserCanRegisterWithValidCredentials status=FAILURE method=RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTheUserCanRegisterWithValidCredentials status=SUCCESS method=RegisterHappyPathTests.verifyTheUserCanRegisterWithValidCredentials()[pri:0, instance:org.yulianakoprinkova.RegisterTests.RegisterHappyPathTests@3ce1e309] output={null}]]]>
               </value>
             </param>
           </params>

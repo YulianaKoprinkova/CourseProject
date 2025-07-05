@@ -40,8 +40,7 @@ public class RegistrationPage extends BasePage {
 
     public String newUsername() {
         int randomNumberForUsername = (int)(Math.random() * 101);
-        String username = ("User1" + randomNumberForUsername);
-        return username;
+        return "User1" + randomNumberForUsername;
     }
 
     public void provideUserName(){
@@ -51,8 +50,7 @@ public class RegistrationPage extends BasePage {
 
     public String newValidEmail() {
         int randomNumberForEmail = (int)(Math.random() * 101);
-        String email = "user12" + randomNumberForEmail + "@gmail.com";
-        return email;
+        return "user12" + randomNumberForEmail + "@gmail.com";
     }
 
     public void provideEmail(){
